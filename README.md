@@ -107,4 +107,4 @@ Not affiliated with TikTok, Google, YouTube or Meta.
 
 ---
 
-Maintained by the team at [ClipX](https://clipx.io) (clipx.io), an AI clipper that keeps captions inside these zones.
+Maintained by the team at [ClipX](https://clipx.io) (clipx.io), an AI clipper that turns long videos into vertical shorts.
