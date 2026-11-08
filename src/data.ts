@@ -1,0 +1,161 @@
+// Generated from data/safe-zones.json by scripts/gen-data.mjs. Do not edit by hand.
+import type { SafeZoneData } from "./types.js";
+
+export const data: SafeZoneData = {
+  "version": "1.0.0",
+  "canvas": {
+    "width": 1080,
+    "height": 1920
+  },
+  "platforms": {
+    "tiktok": {
+      "name": "TikTok",
+      "placement": "In-Feed ads (standard, left-to-right, no anchor)",
+      "margins": {
+        "top": {
+          "px": 240,
+          "pct": 12.5
+        },
+        "bottom": {
+          "px": 660,
+          "pct": 34.375
+        },
+        "left": {
+          "px": 120,
+          "pct": 11.111
+        },
+        "right": {
+          "px": 120,
+          "pct": 11.111
+        }
+      },
+      "boxes": [
+        {
+          "id": "right-actions",
+          "label": "Right-side action buttons (profile, like, comment, share)",
+          "x": 780,
+          "y": 840,
+          "width": 180,
+          "height": 1080
+        }
+      ],
+      "basis": "official-template",
+      "sources": [
+        {
+          "title": "TikTok Ads Help: TikTok Auction In-Feed Ads (safe zone file 'In-Feed-Standard Version LTR.zip')",
+          "url": "https://ads.tiktok.com/help/article/tiktok-auction-in-feed-ads",
+          "kind": "official"
+        }
+      ],
+      "verified": "2026-11-07",
+      "notes": "TikTok publishes the safe zone as an image, not as numbers. The image is 2880x5120 and is labelled in 720x1280 units: 160 top, 440 bottom, 80 left, 80 right, and a right-side column 120 wide and 720 high above the bottom edge. We measured the transparent area of the image to confirm the labels and scaled by 1.5 to 1080x1920. TikTok says the zone also depends on caption length and on extra formats such as anchors; this file is the standard one."
+    },
+    "youtube-shorts": {
+      "name": "YouTube Shorts",
+      "placement": "Vertical video ads (in-stream, in-feed and Shorts)",
+      "margins": {
+        "top": {
+          "px": 288,
+          "pct": 15
+        },
+        "bottom": {
+          "px": 672,
+          "pct": 35
+        },
+        "left": {
+          "px": 48,
+          "pct": 4.444
+        },
+        "right": {
+          "px": 192,
+          "pct": 17.778
+        }
+      },
+      "boxes": [],
+      "basis": "official",
+      "sources": [
+        {
+          "title": "Google Ads Help: Use square and vertical video to engage mobile customers (safe zone diagram, 'Dimensions in pixels')",
+          "url": "https://support.google.com/google-ads/answer/9128498",
+          "kind": "official"
+        },
+        {
+          "title": "Google Ads Help: Your guide to YouTube Shorts ads (right-hand panel with like, dislike, comment and share buttons)",
+          "url": "https://support.google.com/google-ads/answer/16041697",
+          "kind": "official"
+        }
+      ],
+      "verified": "2026-11-07",
+      "notes": "Pixel values are printed on Google's 1080x1920 diagram: 288 top, 672 bottom, 48 left, 192 right. The wider right margin leaves room for the right-hand button panel."
+    },
+    "instagram-reels": {
+      "name": "Instagram Reels",
+      "placement": "Reels ads",
+      "margins": {
+        "top": {
+          "px": 269,
+          "pct": 14
+        },
+        "bottom": {
+          "px": 672,
+          "pct": 35
+        },
+        "left": {
+          "px": 65,
+          "pct": 6
+        },
+        "right": {
+          "px": 65,
+          "pct": 6
+        }
+      },
+      "boxes": [],
+      "basis": "official",
+      "sources": [
+        {
+          "title": "Meta Ads Guide: Awareness Video Ad Specs on Instagram Reels",
+          "url": "https://www.facebook.com/business/ads-guide/update/video/instagram-reels",
+          "kind": "official"
+        }
+      ],
+      "verified": "2026-11-07",
+      "notes": "Meta gives percentages only: 'Consider leaving at least 14% of the top, 35% of the bottom, and 6% on each side of your asset free from text, logos, or other important creative elements.' Pixels are 14% of 1920 = 268.8 and 6% of 1080 = 64.8, rounded up. Some third-party guides quote other bottom values (20% to 40%); we use Meta's own figure."
+    },
+    "facebook-reels": {
+      "name": "Facebook Reels",
+      "placement": "Reels ads",
+      "margins": {
+        "top": {
+          "px": 269,
+          "pct": 14
+        },
+        "bottom": {
+          "px": 672,
+          "pct": 35
+        },
+        "left": {
+          "px": 65,
+          "pct": 6
+        },
+        "right": {
+          "px": 65,
+          "pct": 6
+        }
+      },
+      "boxes": [],
+      "basis": "official",
+      "sources": [
+        {
+          "title": "Meta Ads Guide: Awareness Video Ad Specs on Facebook Reels",
+          "url": "https://www.facebook.com/business/ads-guide/update/video/facebook-facebook-reels",
+          "kind": "official"
+        }
+      ],
+      "verified": "2026-11-07",
+      "notes": "Meta gives percentages only: 'Consider leaving roughly 14% of the top, 35% of the bottom, and 6% on each side of your asset free from text, logos' (the page says this keeps key elements clear of the profile icon and call-to-action). Pixels are rounded up."
+    }
+  },
+  "excluded": {
+    "snapchat-spotlight": "Not included. We found no official Snap page with safe-zone numbers for Spotlight or Snap Ads, and third-party guides disagree (bottom values from 150 px to 450 px). We will add it when an official source exists."
+  }
+};

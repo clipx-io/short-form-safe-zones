@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<title>YouTube Shorts safe zone, 1080x1920</title>
+<defs><mask id="safe"><rect x="48" y="288" width="840" height="960" fill="#fff"/></mask></defs>
+<g fill="rgb(255, 59, 48)" opacity="0.38">
+<rect x="0" y="0" width="1080" height="288"/>
+<rect x="0" y="1248" width="1080" height="672"/>
+<rect x="0" y="288" width="48" height="960"/>
+<rect x="888" y="288" width="192" height="960"/>
+</g>
+<rect x="48" y="288" width="840" height="960" fill="none" stroke="rgb(0, 200, 120)" stroke-width="8" mask="url(#safe)"/>
+<g fill="#fff" font-family="sans-serif"><text x="64" y="64" font-size="44">YouTube Shorts</text><text x="64" y="114" font-size="30">top 288  bottom 672  left 48  right 192 px</text><text x="64" y="1298" font-size="30">unsafe: captions, username, buttons</text></g>
+</svg>

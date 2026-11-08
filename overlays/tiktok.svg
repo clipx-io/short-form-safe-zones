@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<title>TikTok safe zone, 1080x1920</title>
+<defs><mask id="safe"><rect x="120" y="240" width="840" height="1020" fill="#fff"/><rect x="780" y="840" width="180" height="1080" fill="#000"/></mask></defs>
+<g fill="rgb(255, 59, 48)" opacity="0.38">
+<rect x="0" y="0" width="1080" height="240"/>
+<rect x="0" y="1260" width="1080" height="660"/>
+<rect x="0" y="240" width="120" height="1020"/>
+<rect x="960" y="240" width="120" height="1020"/>
+<rect x="780" y="840" width="180" height="1080"><title>Right-side action buttons (profile, like, comment, share)</title></rect>
+</g>
+<rect x="120" y="240" width="840" height="1020" fill="none" stroke="rgb(0, 200, 120)" stroke-width="8" mask="url(#safe)"/>
+<rect x="780" y="840" width="180" height="1080" fill="none" stroke="rgb(0, 200, 120)" stroke-width="8" mask="url(#safe)"/>
+<g fill="#fff" font-family="sans-serif"><text x="136" y="64" font-size="44">TikTok</text><text x="136" y="114" font-size="30">top 240  bottom 660  left 120  right 120 px</text><text x="136" y="1310" font-size="30">unsafe: captions, username, buttons</text></g>
+</svg>

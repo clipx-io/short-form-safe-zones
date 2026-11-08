@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<title>Instagram Reels safe zone, 1080x1920</title>
+<defs><mask id="safe"><rect x="65" y="269" width="950" height="979" fill="#fff"/></mask></defs>
+<g fill="rgb(255, 59, 48)" opacity="0.38">
+<rect x="0" y="0" width="1080" height="269"/>
+<rect x="0" y="1248" width="1080" height="672"/>
+<rect x="0" y="269" width="65" height="979"/>
+<rect x="1015" y="269" width="65" height="979"/>
+</g>
+<rect x="65" y="269" width="950" height="979" fill="none" stroke="rgb(0, 200, 120)" stroke-width="8" mask="url(#safe)"/>
+<g fill="#fff" font-family="sans-serif"><text x="81" y="64" font-size="44">Instagram Reels</text><text x="81" y="114" font-size="30">top 269  bottom 672  left 65  right 65 px</text><text x="81" y="1298" font-size="30">unsafe: captions, username, buttons</text></g>
+</svg>

@@ -1,0 +1,54 @@
+{
+  "name": "short-form-safe-zones",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Safe zones for vertical video on TikTok, YouTube Shorts, Instagram Reels and Facebook Reels: open data, PNG/SVG overlays and a tiny TypeScript library.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Zog Tech, Inc. <admin@clipx.io>",
+  "homepage": "https://github.com/clipx-io/short-form-safe-zones#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clipx-io/short-form-safe-zones.git"
+  },
+  "keywords": [
+    "safe-zone",
+    "tiktok",
+    "reels",
+    "shorts",
+    "youtube-shorts",
+    "instagram-reels",
+    "vertical-video",
+    "video-editing",
+    "captions",
+    "overlay"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./safe-zones.json": "./data/safe-zones.json"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "data",
+    "overlays"
+  ],
+  "scripts": {
+    "gen": "node scripts/gen-data.mjs",
+    "overlays": "uv run --no-project --with pillow python scripts/make_overlays.py",
+    "build": "node scripts/gen-data.mjs && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepare": "tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

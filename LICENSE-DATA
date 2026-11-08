@@ -1,0 +1,18 @@
+Data and images license
+
+The files in data/, overlays/ and docs/ are
+Copyright (c) 2026 Zog Tech, Inc. and are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+You may copy, share and adapt them for any purpose, including commercial use,
+if you give credit. A suitable credit is:
+
+  "Safe-zone data from short-form-safe-zones by ClipX
+   (https://github.com/clipx-io/short-form-safe-zones), CC BY 4.0"
+
+The platform names and the specifications they publish belong to their owners.
+This project is not affiliated with TikTok, Google, YouTube or Meta.
+
+The code (src/, scripts/, test/) is under the MIT License in LICENSE.
